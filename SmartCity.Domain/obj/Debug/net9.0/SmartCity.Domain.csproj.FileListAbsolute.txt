@@ -1,0 +1,12 @@
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\bin\Debug\net9.0\SmartCity.Domain.deps.json
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\bin\Debug\net9.0\SmartCity.Domain.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\bin\Debug\net9.0\SmartCity.Domain.pdb
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.AssemblyInfoInputs.cache
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.AssemblyInfo.cs
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.csproj.CoreCompileInputs.cache
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.sourcelink.json
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\refint\SmartCity.Domain.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\SmartCity.Domain.pdb
+C:\Users\x\Desktop\smart_city\SmartCity.Domain\obj\Debug\net9.0\ref\SmartCity.Domain.dll

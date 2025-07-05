@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "IAmQSqcZ1SDr+xR5uu4cCHCyVPgucSZIyzUhfp+18nw=",
+  "Source": "SmartCity.API",
+  "BasePath": "_content/SmartCity.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

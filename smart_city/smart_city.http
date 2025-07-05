@@ -1,0 +1,6 @@
+@smart_city_HostAddress = http://localhost:5080
+
+GET {{smart_city_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

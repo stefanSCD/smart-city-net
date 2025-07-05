@@ -1,0 +1,16 @@
+C:\Users\x\Desktop\smart_city\SmartCity.Application\bin\Debug\net9.0\SmartCity.Application.deps.json
+C:\Users\x\Desktop\smart_city\SmartCity.Application\bin\Debug\net9.0\SmartCity.Application.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Application\bin\Debug\net9.0\SmartCity.Application.pdb
+C:\Users\x\Desktop\smart_city\SmartCity.Application\bin\Debug\net9.0\SmartCity.Domain.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Application\bin\Debug\net9.0\SmartCity.Domain.pdb
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.csproj.AssemblyReference.cache
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.AssemblyInfoInputs.cache
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.AssemblyInfo.cs
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.csproj.CoreCompileInputs.cache
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.sourcelink.json
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCit.459CB8C6.Up2Date
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\refint\SmartCity.Application.dll
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\SmartCity.Application.pdb
+C:\Users\x\Desktop\smart_city\SmartCity.Application\obj\Debug\net9.0\ref\SmartCity.Application.dll
