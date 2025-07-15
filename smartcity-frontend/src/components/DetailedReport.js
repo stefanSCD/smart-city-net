@@ -17,6 +17,7 @@ import FormControl from '@mui/material/FormControl';
 import { MapContainer, TileLayer, Marker, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { reportProblem } from '../api';
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: 'flex',
@@ -90,14 +91,32 @@ export default function DetailedReportPage(props) {
     }
   };
 
-  const handleSubmit = () => {
-    console.log('Detailed Report:', {
-      image: selectedFile,
-      location: userLocation,
-      description,
-      issueType,
-    });
-    // Poți trimite datele către backend aici
+  const handleSubmit = async () => {
+    if (!selectedFile) {
+      alert("Please upload an image before submitting.");
+      return;
+    }
+    const formData = new FormData();
+    formData.append('ImageFile', selectedFile);
+    formData.append('Description', description);
+    formData.append('Latitude', userLocation.lat);
+    formData.append('Longitude', userLocation.lng);
+    formData.append('Name', issueType);
+    formData.append('ReporterId', 1);
+
+    console.log('Describing issue:', description);
+    try{
+          await reportProblem(formData);
+          alert('Problem reported successfully!');
+          setDescription('');
+          setSelectedFile(null);
+          setIssueType('');
+          setPreviewUrl(null);
+        }
+        catch(error){
+          console.error('Error submitting problem:', error);
+          alert('Failed to report problem.');
+        }
   };
 
   return (
@@ -119,10 +138,10 @@ export default function DetailedReportPage(props) {
             )}
             <TextField
                 id="description"
-                type="description"
                 name="description"
                 placeholder="Describe the issue in detail"
-                autoFocus
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
                 fullWidth
                 variant="outlined"
             />

@@ -89,6 +89,10 @@ namespace SmartCity.Infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ImagePath")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
                     b.Property<float>("Latitude")
                         .HasColumnType("REAL");
 

@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import NavigateNextRoundedIcon from '@mui/icons-material/NavigateNextRounded';
 
+import { getProblems } from '../api';
+
 const articleInfo = [
   {
     tag: 'Engineering',
@@ -178,8 +180,47 @@ Author.propTypes = {
   ).isRequired,
 };
 
+
+
+
 export default function Latest() {
   const [focusedCardIndex, setFocusedCardIndex] = React.useState(null);
+  const [problems, setProblems] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchProblems = async () => {
+      const response = await getProblems();
+
+      const solvedProblems = response.data
+        .filter((problem) => problem.status === "Solved");
+
+      setProblems(solvedProblems);
+    };
+    fetchProblems();
+  }, []);
+
+  const generateArticleInfo = (problems) => {
+    const minArticles = 10;
+    let articles = [];
+
+    if (problems.length === 0) return [];
+
+    while (articles.length < minArticles) {
+      articles = articles.concat(problems);
+    }
+
+    articles = articles.slice(0, minArticles);
+
+    return articles.map((problem, index) => ({
+      id: index,
+      tag: problem.name,
+      title: problem.name,
+      description: problem.description,
+      authors: [{ name: 'Anonymous User', avatar: '/static/images/avatar/1.jpg' }],
+    }));
+  };
+
+  const articleInfo = generateArticleInfo(problems);
 
   const handleFocus = (index) => {
     setFocusedCardIndex(index);
@@ -232,9 +273,6 @@ export default function Latest() {
           </Grid>
         ))}
       </Grid>
-      <Box sx={{ display: 'flex', flexDirection: 'row', pt: 4 }}>
-        <Pagination hidePrevButton hideNextButton count={10} boundaryCount={10} />
-      </Box>
     </div>
   );
 }

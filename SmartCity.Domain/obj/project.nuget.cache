@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FvgncF7HBTI=",
+  "dgSpecHash": "V8DAOt3VTo4=",
   "success": true,
   "projectFilePath": "C:\\Users\\x\\Desktop\\smart_city\\SmartCity.Domain\\SmartCity.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\x\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.302\\microsoft.net.sdk.compilers.toolset.9.0.302.nupkg.sha512"
+  ],
   "logs": []
 }

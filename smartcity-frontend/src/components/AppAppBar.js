@@ -77,15 +77,7 @@ export default function AppAppBar() {
               </Button>
               <Button variant="text" color="info" size="small" component={RouterLink} to="/userSettings">
                 Settings
-              </Button>
-              <Button variant="text" color="info" size="small" component={RouterLink} to="/userHistory">
-                History
-              </Button>
-              
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
-                FAQ
-              </Button>
-              
+              </Button>             
             </Box>
           </Box>
           <Box

@@ -143,9 +143,39 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "SmartCity.Application.DTOs.Problem.CreateProblemDto",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Latitude",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "Longitude",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "ReporterId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -196,6 +226,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartCity.API.Controllers.ProblemController",
+    "Method": "GetById",
+    "RelativePath": "api/Problem/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SmartCity.Domain.Entities.Problem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "SmartCity.API.Controllers.ProblemAssignmentController",

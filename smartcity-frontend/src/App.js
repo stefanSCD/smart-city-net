@@ -2,7 +2,6 @@ import React from 'react';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Blog from './components/Blog';
-import UserHistory from './components/UserHistory';
 import UserSettings from './components/UserSettings';
 import FastReportPage from './components/FastReport';
 import DetailedReportPage from './components/DetailedReport';
@@ -24,7 +23,6 @@ function App() {
       />
       <Route path="/userSettings"
        element={<ProtectedRoute><UserSettings /> </ProtectedRoute>} />
-      <Route path="/userHistory" element={<ProtectedRoute><UserHistory /> </ProtectedRoute>} />
       <Route path="/fastReport" element={<ProtectedRoute><FastReportPage /></ProtectedRoute>} />
       <Route path="/detailedReport" element={<ProtectedRoute><DetailedReportPage /></ProtectedRoute>} />
       {/* Redirect any unknown paths to the sign-in page */}

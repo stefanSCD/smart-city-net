@@ -22,8 +22,27 @@ namespace SmartCity.API.Controllers
             return Ok(problems);
         }
         [HttpPost]
-        public async Task<ActionResult<Problem>> Post(CreateProblemDto dto)
+        [Consumes("multipart/form-data")]
+        public async Task<ActionResult<Problem>> Post([FromForm] CreateProblemDto dto)
         {
+            string imagePath = null;
+
+            if (dto.ImageFile != null && dto.ImageFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine("wwwroot/images/problems");
+                Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.ImageFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await dto.ImageFile.CopyToAsync(stream);
+                }
+
+                imagePath = "/images/problems/" + fileName;
+            }
+
             var problem = new Problem
             {
                 Name = dto.Name,
@@ -31,13 +50,17 @@ namespace SmartCity.API.Controllers
                 Latitude = dto.Latitude,
                 Longitude = dto.Longitude,
                 ReporterId = dto.ReporterId,
-                Status = dto.Status
+                Status = "Pending",
+                ImagePath = imagePath
             };
 
             _db.Problems.Add(problem);
             await _db.SaveChangesAsync();
-            return CreatedAtAction(nameof(Get), new { id = problem.Id }, problem);
+
+            return CreatedAtAction(nameof(GetById), new { id = problem.Id }, problem);
         }
+
+
         [HttpPatch("{id}")]
         public async Task<IActionResult> Patch(int id, UpdateProblemDto dto)
         {
@@ -74,6 +97,14 @@ namespace SmartCity.API.Controllers
             _db.Problems.Remove(problem);
             await _db.SaveChangesAsync();
             return NoContent();
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Problem>> GetById(int id)
+        {
+            var problem = await _db.Problems.FindAsync(id);
+            if (problem == null)
+                return NotFound();
+            return Ok(problem);
         }
     }
 }

@@ -33,5 +33,7 @@ namespace SmartCity.Domain.Entities
         [Required]
         [MaxLength(50)]
         public string Status { get; set; } = "Pending";
+        [MaxLength(500)]
+        public string? ImagePath { get; set; }
     }
 }

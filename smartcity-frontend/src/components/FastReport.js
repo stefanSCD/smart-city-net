@@ -13,6 +13,7 @@ import TextField from '@mui/material/TextField';
 import { MapContainer, TileLayer, Marker, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { reportProblem } from '../api';
 
 const Card = styled(MuiCard)(({ theme }) => ({
   display: 'flex',
@@ -84,10 +85,35 @@ export default function FastReportPage(props) {
     }
   };
 
-  const handleSubmit = () => {
-    console.log('Report submitted with:', selectedFile, userLocation);
-    // Poți trimite datele către un backend aici
+  const handleSubmit = async () => {
+    if (!selectedFile) {
+      alert("Please upload an image before submitting.");
+      return;
+    }
+    
+    const formData = new FormData();
+    formData.append('ImageFile', selectedFile);
+    formData.append('Name', 'Fast Report');
+    formData.append('Description', 'FAST REPORT');
+    formData.append('Latitude', userLocation.lat);
+    formData.append('Longitude', userLocation.lng);
+    formData.append('ReporterId', 1);
+
+    console.log('Submitting form data:', formData);
+
+    try{
+      await reportProblem(formData);
+      alert('Problem reported successfully!');
+      setSelectedFile(null);
+      setPreviewUrl(null);
+    }
+    catch(error){
+      console.error('Error submitting problem:', error);
+      alert('Failed to report problem.');
+    }
   };
+
+  
 
   return (
     <AppTheme {...props}>

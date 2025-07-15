@@ -26,7 +26,6 @@ C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\Microsoft.OpenApi.d
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\SQLitePCLRaw.core.dll
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
-C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -66,12 +65,6 @@ C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\scopedcss\bundle\Sm
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets\msbuild.SmartCity.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets\msbuild.SmartCity.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets\msbuild.build.SmartCity.API.props
-C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.SmartCity.API.props
-C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.SmartCity.API.props
-C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\SmartCit.CC644836.Up2Date
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\SmartCity.API.dll
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\refint\SmartCity.API.dll
@@ -163,4 +156,10 @@ C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\zh-Hant\Microsoft.C
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\x\Desktop\smart_city\SmartCity.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\x\Desktop\smart_city\SmartCity.API\bin\Debug\net9.0\SmartCity.API.staticwebassets.runtime.json
